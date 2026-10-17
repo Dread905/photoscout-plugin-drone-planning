@@ -1,0 +1,30 @@
+{
+  "id": "map.dread905.drone-planning",
+  "name": "Drone planning",
+  "version": "0.1.0",
+  "description": "Advisory drone flight planning overlay for Australia: airspace, aerodromes, fire hazards, weather and aircraft, with a CASR Part 101 pilot checklist. Planning guidance only.",
+  "author": "Dread905",
+  "homepage": "https://github.com/Dread905/photoscout-plugin-drone-planning",
+  "category": "map",
+  "photoscout": "^1.0",
+  "server": "server.js",
+  "web": "web.js",
+  "public": ["/aerodromes"],
+  "permissions": [
+    { "kind": "network", "detail": "api.core.openaip.net" },
+    { "kind": "network", "detail": "www.rfs.nsw.gov.au" },
+    { "kind": "network", "detail": "api.open-meteo.com" },
+    { "kind": "network", "detail": "api.adsb.lol" },
+    { "kind": "network", "detail": "opendata.adsb.fi" },
+    { "kind": "network", "detail": "overpass-api.de" },
+    { "kind": "storage", "detail": "SQLite cache and the aerodromes.json dataset" }
+  ],
+  "settings": [
+    {
+      "key": "openaipApiKey",
+      "type": "secret",
+      "label": "OpenAIP API key",
+      "help": "Free key from openaip.net. Used server-side for airspace and airport context; never sent to the browser. Without it the plan still shows fire, weather, aircraft and any local aerodrome data."
+    }
+  ]
+}
