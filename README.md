@@ -34,6 +34,4 @@ The packaged zip must contain only `plugin.json`, `server.js`, and `web.js`.
 
 ## Release gates
 
-Do not publish a first release until a human verifies the CASR citations and the runway-geometry parameters; a licensed aerodrome source and its provenance are decided; the airspace-floor limitation is addressed or explicitly retained; and OpenAIP's CC BY-NC-SA 4.0 terms are confirmed for the intended use.
-
 Known limitations remain deliberate: no NOTAM feed, no non-fire emergency-operation feed, NSW RFS coverage only, no bundled aerodrome dataset, weather is current rather than planned-flight-time forecast, and OpenAIP is community planning context rather than Australian legal-clearance data.
