@@ -34,4 +34,4 @@ The packaged zip must contain only `plugin.json`, `server.js`, and `web.js`.
 
 ## Release gates
 
-Known limitations remain deliberate: no NOTAM feed, no non-fire emergency-operation feed, NSW RFS coverage only, no bundled aerodrome dataset, weather is current rather than planned-flight-time forecast, and OpenAIP is community planning context rather than Australian legal-clearance data.
+Known limitations remain deliberate: no NOTAM feed, no non-fire emergency-operation feed, NSW RFS coverage only, no bundled aerodrome dataset, weather is current rather than planned-flight-time forecast.
